@@ -80,6 +80,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 nav li {
@@ -316,6 +317,10 @@ section {
 
   nav {
     margin-left: 5px;
+  }
+
+  nav a {
+    margin-bottom: 3px;
   }
 
   nav li:hover .nav_info {
