@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="script.js" defer></script>
     <title>CV - Elena Anfilofeva</title>
@@ -20,37 +23,37 @@
       <div>
         <ul>
           <a href="#header"
-            ><li>
+            ><li class="header">
               <img src="assets/logo_thenounproject/user.svg" />
               <span class="nav_info">A PROPOS</span>
             </li>
           </a>
           <a href="#lang"
-            ><li>
+            ><li class="lang">
               <img src="assets/logo_thenounproject/language.svg" />
               <span class="nav_info">LANGUES</span>
             </li>
           </a>
           <a href="#competences"
-            ><li>
+            ><li class="competences">
               <img src="assets/logo_thenounproject/skills.svg" />
               <span class="nav_info">COMPETENCES</span>
             </li>
           </a>
           <a href="#formations">
-            <li>
+            <li class="formations">
               <img src="assets/logo_thenounproject/study.svg" />
               <span class="nav_info">FORMATIONS</span>
             </li>
           </a>
           <a href="#experiences">
-            <li>
+            <li class="experiences">
               <img src="assets/logo_thenounproject/work.svg" />
               <span class="nav_info">EXPERIENCE</span>
             </li>
           </a>
           <a href="#hobby"
-            ><li>
+            ><li class="hobby">
               <img src="assets/logo_thenounproject/hobby.svg" />
               <span class="nav_info">CENTRES D'INTERET</span>
             </li>
@@ -62,7 +65,7 @@
     <div id="main_wrapper">
       <div id="second_wrapper">
         <header>
-          <div id="header">
+          <div id="header" class="nav_scroll">
             <img id="my_photo" src="assets/me.jpg" alt="Elena's photo" />
             <div id="head_text">
               <h1>Elena Anfilofeva</h1>
@@ -79,7 +82,10 @@
               </div>
               <div class="logo_text">
                 <a target="_blank" href="https://github.com/elenanf"
-                  ><img class="social_media_logo" src="assets/github.png" />elenanf</a
+                  ><img
+                    class="social_media_logo"
+                    src="assets/github.png"
+                  />elenanf</a
                 >
               </div>
               <div class="logo_text">
@@ -96,7 +102,7 @@
         </header>
         <section>
           <div id="CV-first-part">
-            <div class="container hidden" id="lang">
+            <div class="container hidden nav_scroll" id="lang">
               <div>
                 <h2>Langues</h2>
                 <ul>
@@ -107,7 +113,7 @@
               </div>
             </div>
 
-            <div class="container hidden" id="competences">
+            <div class="container hidden nav_scroll" id="competences">
               <h2>Compétences</h2>
 
               <span class="skills_round">HTML5</span>
@@ -122,16 +128,21 @@
           </div>
 
           <div id="main-cv">
-            
-            <div class="container hidden" id="formations">
+            <div class="container hidden nav_scroll" id="formations">
               <h2>Formations</h2>
-              
+
               <h3>
                 Piscine Discovery (Stage de Découverte, Développement Web)
               </h3>
               <p>42 Lyon</p>
               <p>Février - Mars 2023</p>
-              <p>5 Jours d'Initiation au code</p>
+              <ul>
+                <li>Bash</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Rush (projet de groupe)</li>
+              </ul>
               <br />
               <h3>Master Urbanisme et Aménagement</h3>
               <p>Institut d'Urbanisme de Lyon</p>
@@ -142,7 +153,7 @@
               <p>2015-2018</p>
             </div>
 
-            <div class="container hidden" id="experiences">
+            <div class="container hidden nav_scroll" id="experiences">
               <h2>Expériences professionnelles</h2>
               <h3>SOLIHA Rhône et Grand Lyon</h3>
               <p>Conseillère habitat - Assistante d'études ou d'opérations</p>
@@ -174,29 +185,36 @@
               </p>
             </div>
 
-            <div class="container hidden" id="hobby">
+            <div class="container hidden nav_scroll" id="hobby">
               <div>
                 <h2>Centres d'intérêt</h2>
-  
+
                 <div class="logo_text">
-                  <img class="hobby_logo" src="assets/logo_thenounproject/sew.svg" />
+                  <img
+                    class="hobby_logo"
+                    src="assets/logo_thenounproject/sew.svg"
+                  />
                   <p>Couture</p>
                 </div>
-  
+
                 <div class="logo_text">
-                  <img class="hobby_logo" src="assets/logo_thenounproject/yoga.svg" />
+                  <img
+                    class="hobby_logo"
+                    src="assets/logo_thenounproject/yoga.svg"
+                  />
                   <p>Yoga</p>
                 </div>
-  
+
                 <div class="logo_text">
-                  <img class="hobby_logo" src="assets/logo_thenounproject/coding.svg" />
+                  <img
+                    class="hobby_logo"
+                    src="assets/logo_thenounproject/coding.svg"
+                  />
                   <p>Programmation</p>
                 </div>
               </div>
             </div>
-            
           </div>
-
         </section>
       </div>
     </div>

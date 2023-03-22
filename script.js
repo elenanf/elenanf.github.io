@@ -1,3 +1,31 @@
+// Nav Bar
+
+const sections = document.querySelectorAll('.nav_scroll');
+const navLi = document.querySelectorAll('nav li');
+
+window.addEventListener('scroll', navHighlight);
+
+function navHighlight() {
+  let current = 'header';
+  sections.forEach( section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if(window.scrollY >= (sectionTop - sectionHeight / 2 )){
+      current = section.getAttribute('id');
+    }
+  })
+
+  navLi.forEach( li => {
+    li.classList.remove('active');
+    if(
+      li.classList.contains(current)){
+        li.classList.add('active')
+      }
+  })
+};
+
+// Script for lateral movement of containers while scrolling
+
 const options = {
   threshold: 0.3,
 };
